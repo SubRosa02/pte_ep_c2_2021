@@ -61,7 +61,7 @@ my_list.sort(reverse=True)
 print(my_list)
 
 my_list.sort()
-my_list.reverse()
+my_list.reverse()  # Megfordítja a lista elemeinek sorrendjét. Azért lesz csökkenő, mert előtte rendeztük a listát!
 print(my_list)
 
 my_list2 = sorted(my_list)
