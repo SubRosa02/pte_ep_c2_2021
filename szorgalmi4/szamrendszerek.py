@@ -24,7 +24,7 @@ while invalid_value:
             if start_number[i].isnumeric():
                 value2 = int(start_number[i])
             else:
-                value2 = ord(start_number[i]) - 65 + 10
+                value2 = ord(start_number[i].upper()) - 65 + 10
             if value2 >= start_number_system:
                 invalid_value = True
                 print("Nem a kiindulási számrendszerbeli szám.")
@@ -50,7 +50,7 @@ for i in range(len(start_number)):
     if start_number[i].isnumeric():
         value = int(start_number[i])
     else:
-        value = ord(start_number[i]) - 65 + 10
+        value = ord(start_number[i].upper()) - 65 + 10
     number += value * start_number_system ** (len(start_number) - i - 1)
 
 while number > 0:

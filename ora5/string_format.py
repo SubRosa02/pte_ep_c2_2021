@@ -16,10 +16,12 @@ print(f"A szám bináris alakja: {number:b}, az oktális alakja: {number:o}, a d
 print("A szám bináris alakja: {:b}, az oktális alakja: {:o}, a decimális alakja: {:d}, "
       "hexadecimális alakja: {:x} és {:X}".format(number, number, number, number, number))
 
+# Unicode character
 number = 65
 print(f"{number:c}")
 print("{:c}".format(number))
 
+# Valós számok
 number = 100.12345
 print(f"Tudományos: {number:e} vagy {number:E}")
 print(f"Valós szám: {number:f}")
